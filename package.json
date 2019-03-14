@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/Flyewzz/study-lunch#readme",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mysql": "^2.16.0"
   }

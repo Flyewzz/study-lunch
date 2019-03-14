@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      TABLE {
+       width: 300px; /* Ширина таблицы */
+       border-collapse: collapse; /* Убираем двойные линии между ячейками */
+      }
+      TD, TH {
+       padding: 3px; /* Поля вокруг содержимого таблицы */
+       border: 1px solid black; /* Параметры рамки */
+      }
+      TH {
+       background: #b0e0e6; /* Цвет фона */
+      }
+      .categories {
+        text-decoration: none;
+        font-size: 26px;
+      }
+     </style>
+</head>
+<body>
+ <table>
+   <tr>
+     <% categories.forEach((category) => { %>
+       <td><a class='categories' href="/categories/<%= category.idCategory %>"><%= category.name %></a></td>
+     <% }) %>
+    </tr>
+ </table>   
+</body>
+</html>
